@@ -124,7 +124,7 @@ cantidad){
      }
     
     }
- //venta menos o mas de     productos
+ //venta menos o mas de 100    productos
        public double  menosdecien(){
     double venta=this.totalProductosVendidos*this.ValorU-((this.totalProductosVendidos*this.ValorU)*0.20);
     return venta;
