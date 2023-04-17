@@ -95,6 +95,88 @@ public class Producto {
     public String toString() {
         return "Producto{" + "\nombre=" + nombre + ",\n tipo=" + tipo + ",\n cantidadBodega=" + cantidadBodega + ", \ncantidadMinima=" + cantidadMinima + ", \nValorU=" + ValorU + "\n, totalProductosVendidos=" + totalProductosVendidos + '}';
     }
+//cantidad 
+    public boolean haySuficienteCantidad (int
+cantidad){
+    if(this.cantidadBodega>=cantidad){
+        return true;
+        
+    
+    }
+    else{
+    return false;
+    }
+    }
+
+//descuento 
+    public double  descuento(){
+    double venta=this.totalProductosVendidos*this.ValorU-((this.totalProductosVendidos*this.ValorU)*0.10);
+    return venta;
+            
+    
+    }
+    public double Descuento (int cantidad ){
+     if (this.totalProductosVendidos>cantidad){
+     return descuento();
+     }
+     else{
+         return 0;
+     }
+    
+    }
+ //venta menos o mas de     productos
+       public double  menosdecien(){
+    double venta=this.totalProductosVendidos*this.ValorU-((this.totalProductosVendidos*this.ValorU)*0.20);
+    return venta;
+       }
+       
+         public double  masdecien(){
+    double venta=this.totalProductosVendidos*this.ValorU+((this.totalProductosVendidos*this.ValorU)*0.10);
+    return venta;
+       }
+        
+         public double seaVendidoMasOMenosdeCien(int cantidad){
+         
+             if (cantidad>=100){
+             
+             return masdecien();
+             
+             }
+             else {
+             
+             return masdecien();
+             }
+         
+         
+         
+         }
+        
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+    }
+
+
+    
+  
+
+
+
+
+
     
     
     
@@ -102,6 +184,3 @@ public class Producto {
     
     
     
-    
-    
-}
