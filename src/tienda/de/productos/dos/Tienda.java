@@ -297,7 +297,29 @@ public void ProductosParaLaVenta(){
 
 }
 
+ public double getIvaProducto (Producto prod){
  
+ 
+ double ivaProd=0.0;
+ switch (prod.getTipo()){
+     case Producto.PAPELERIA:
+     
+          ivaProd=prod.IVA_PAPELERIA;
+     
+      
+         
+     case Producto.DROGUERIA:
+         ivaProd = prod.IVA_FARMACIA;
+           break;
+     
+     case Producto.MERCADO:
+            ivaProd = prod.IVA_SUPERMERCADO;
+         break;
+ 
+ 
+ }           
+ return ivaProd;
+ }
    
 
 
