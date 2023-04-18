@@ -181,14 +181,12 @@ public class Tienda {
 
     }
 
-    public void pedido(Producto prod) {
-        System.out.println("se puede hacer el envio");
-    }
+   
 
     public void hacerPedido(Producto prod) {
         if (prod.getCantidadBodega() < prod.getCantidadMinima()) {
-            System.out.println("el pedido del producto " + prod.getNombre());
-            pedido(prod);
+            System.out.println("el pedido del producto " + prod.getNombre()+ " se puede hacer");
+          
 
         } else {
             
@@ -280,7 +278,7 @@ return cambiarValorUnitario(producto1)
 }
 //determinar cantidad de productos
 public boolean ProductosParaVenta(Producto prod){
-if (prod.getCantidadMinima()>prod.getCantidadBodega()){
+if (prod.getCantidadMinima()<prod.getCantidadBodega()){
     System.out.println("se puede hacer la venta " + prod.getTipo());
     return true;
 }
