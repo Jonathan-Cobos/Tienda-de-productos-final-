@@ -191,7 +191,8 @@ public class Tienda {
             pedido(prod);
 
         } else {
-            System.out.println("");
+            
+            System.out.println("no se puede hacer el pedido del producto " + prod.getNombre());
         }
 
     }
