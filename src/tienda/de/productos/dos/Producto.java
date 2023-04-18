@@ -154,7 +154,10 @@ cantidad){
        
        
        
-       
+       public void venderCantidadProductos(int cantventa){
+           this.totalProductosVendidos+=cantventa;
+           this.cantidadBodega-=cantventa;
+       }
        
        
        

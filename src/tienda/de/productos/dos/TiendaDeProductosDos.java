@@ -90,6 +90,20 @@ System.out.println("productos para vender 255 bolsas de leche= " + leche.haySufi
 System.out.println("se hizo un pedido de 20 leches y se le hace un descuento de 10%=" + leche.Descuento(20) );
 // se vende 100 leches
 System.out.println("se vendieron 200 leches entonces se lñe hace un incremento del 10%=" + leche.seaVendidoMasOMenosdeCien(200));
+//vender uuna cantidadad de productos 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     }
 
