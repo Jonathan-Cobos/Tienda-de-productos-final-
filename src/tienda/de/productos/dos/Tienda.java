@@ -319,9 +319,58 @@ public void ProductosParaLaVenta(){
  
  }           
  return ivaProd;
+
  }
    
 
+//LAB SWICH 
+ //mostrar nombre 
+    public void mostrarTipo(Producto prod){
+    
+    switch (prod.getTipo()){
+        case Producto.PAPELERIA:
+            System.out.println("El producto "+ prod.getNombre() + " es del tipo " + prod.getTipo());
+            break;
+            
+        case Producto.MERCADO:
+             System.out.println("El producto "+ prod.getNombre() + " es del tipo " + prod.getTipo());
+            break;
+        
+        case Producto.DROGUERIA:
+             System.out.println("El producto "+ prod.getNombre() + " es del tipo " + prod.getTipo());
+            break;
+    
+    
+    }
+    }
+    
+    
+    
+     public double aumentarPrecioProducto (Producto prod){
+ 
+         double valoru= prod.getValorU();
+ switch (prod.getTipo()){
+     case Producto.PAPELERIA:
+     
+          return valoru+= prod.getValorU() * 0.02;
+           
+         
+     case Producto.DROGUERIA:
+         return valoru+= prod.getValorU() * 0.01;
+           
+     
+     case Producto.MERCADO:
+             return valoru+= prod.getValorU() * 0.063;
+         
+ 
+ 
+ }           
+
+    return valoru;
+
+ }
+   
+    
 
 
 

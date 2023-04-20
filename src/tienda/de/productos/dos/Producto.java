@@ -159,7 +159,7 @@ cantidad){
            this.cantidadBodega-=cantventa;
        }
        
-       
+  
        
        
        

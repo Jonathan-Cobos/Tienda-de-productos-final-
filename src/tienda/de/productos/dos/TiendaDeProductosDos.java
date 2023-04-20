@@ -91,7 +91,17 @@ System.out.println("se hizo un pedido de 20 leches y se le hace un descuento de 
 // se vende 100 leches
 System.out.println("se vendieron 200 leches entonces se lñe hace un incremento del 10%=" + leche.seaVendidoMasOMenosdeCien(200));
 //vender uuna cantidadad de productos 
+miTienda.getProducto1().venderCantidadProductos(200);
+System.out.println("se hace una venta de 200 unidades del producto " + miTienda.getProducto1().getNombre()  );
+        System.out.println("las unidades que se vendieron son " + miTienda.getProducto1().getNombre());
 
+
+//nombre del produto y tipo
+
+miTienda.mostrarTipo(miTienda.getProducto1());
+
+//cambiar valor u 
+miTienda.cambiarValorUnitario(miTienda.getProducto2());
 
 
 
